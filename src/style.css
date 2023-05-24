@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 250, 250);
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.container {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+div.search-box {
+    margin: 20px 0; 
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+div.search-box input[type="text"] {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    border: none;
+}
+
+div.search-box input[type="text"]:focus {
+    outline: none;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.image-container .image-card {
+    width: 320px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 5px rgb(212, 212, 212);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.image-container .image-card .image {
+    width: 100%;
+    height: 200px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    /* margin: 5px; */
+    box-shadow: 0 3px 5px rgb(212, 212, 212);
+}
+
+.image-container .image-card p {
+    padding: 5px 15px;
+    text-transform: lowercase;
+}
+
+.image-container .image-card p::first-letter {
+    text-transform: capitalize;
+}
+
+a.download {
+    display: inline-block;
+    font-size: 0.8em;
+    margin: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 15px;
+    margin-top: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 300ms;
+    background-color: rgb(255, 255, 255);
+}
+
+a.download:hover {
+    background-color: rgb(200, 200, 200) !important;
+    color: black !important;
+}
