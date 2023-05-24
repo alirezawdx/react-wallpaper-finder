@@ -9,8 +9,7 @@ function ImageShow({ image }) {
 			></div>
 			<p>{image.alt_description}</p>
 			<a
-				href={image.urls.small}
-                download={true}
+				href={image.urls.raw}
                 target="_blank"
 				className='download'
 				style={{
