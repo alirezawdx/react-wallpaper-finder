@@ -7,7 +7,7 @@ function SearchBox({ onSubmit }) {
 		setQueryText(event.target.value);
 	}
 
-	function onFormSubmit(event) {
+	function handleFormSubmit(event) {
 		// Stop refreshing the page after submitting the search queryText
 		event.preventDefault();
 
@@ -17,7 +17,7 @@ function SearchBox({ onSubmit }) {
 
 	return (
 		<div className='search-box'>
-			<form onSubmit={onFormSubmit}>
+			<form onSubmit={handleFormSubmit}>
 				<input
 					type='text'
 					autoFocus
@@ -25,6 +25,7 @@ function SearchBox({ onSubmit }) {
 					onChange={handleChange}
 					placeholder='Search...'
 				/>
+				<input type='Submit' value='Search' />
 			</form>
 		</div>
 	);

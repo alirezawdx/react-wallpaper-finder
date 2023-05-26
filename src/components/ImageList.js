@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import ImageShow from './ImageShow';
 
 function ImageList({ images }) {
