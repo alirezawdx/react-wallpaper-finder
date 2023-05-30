@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 function SearchBox({ onSubmit }) {
-    const [queryText, setQueryText] = useState("");
+    const [queryText, setQueryText] = useState('');
 
     function handleChange(event) {
         setQueryText(event.target.value);
@@ -16,14 +16,14 @@ function SearchBox({ onSubmit }) {
     }
 
     return (
-        <div className="search-box">
+        <div className='search-box'>
             <form onSubmit={handleFormSubmit}>
                 <input
-                    type="text"
+                    type='text'
                     autoFocus
                     value={queryText}
                     onChange={handleChange}
-                    placeholder="Search..."
+                    placeholder='Search...'
                 />
                 {/* I got this warning in browser console */}
 
@@ -33,7 +33,7 @@ function SearchBox({ onSubmit }) {
                 onChange or readOnly. */}
 
                 {/* so I changed submit input to button submit */}
-                <button type="submit">Search</button>
+                <button type='submit'>Search</button>
             </form>
         </div>
     );
